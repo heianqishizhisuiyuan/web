@@ -1,0 +1,35 @@
+<%if(pager){%>
+	<div class="pager-bar" page="<%=pager.page%>" size="<%=pager.size%>" 
+		total="<%=pager.total%>" pages="<%=pager.pages%>">
+		<ul>
+			<%if(pager.page > 0){%>
+				<li class="pager-pre">上一页</li>
+			<%}else{%>
+				<li class="pager-disable">上一页</li>
+			<%}%>
+			<%var spliter = false;%>
+			<%for(var j=0;j<pager.pages;j++){%>
+				<%var show = false;%>
+				<%if(j==0 || j==pager.pages-1 || j >= pager.page-1 && j <= pager.page+1) show = true;%>
+				<%if(show){ spliter = false;%>
+					<%if(j==pager.page){%>
+						<li class="pager-page pager-cur" page='<%=j%>'><%=j+1%></li>
+					<%}else{%>
+						<li class="pager-page" page='<%=j%>'><%=j+1%></li>
+					<%}%>
+				<%}else{%>
+					<%if(!spliter){spliter=true;%>
+						<li class="pager-spliter">...</li>
+					<%}%>
+				<%}%>			
+			<%}%>
+
+			<%if(pager.page < pager.pages-1){%>
+				<li class="pager-next">下一页</li>
+			<%}else{%>
+				<li class="pager-disable">下一页</li>
+			<%}%>
+			
+		</ul>
+	</div>
+<%}%>

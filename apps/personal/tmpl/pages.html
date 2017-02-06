@@ -1,0 +1,30 @@
+<%if(type){%>
+	<div> <i class="glyphicon glyphicon-home back_home"></i><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><span class="two-menu"><%=article[0].type%></span></div>
+<%}%>
+<input type="hidden" id="now_page"  value="<%=pages%>"/>
+<%article.forEach(function(item,i){%>
+	<article class="article">
+		<input type="hidden" value="<%=item.id%>" class="artid"/>
+		<h3 class="article-title">
+			<a href="../anArticle/<%=item.id%>.html"><%=item.title%></a>
+		</h3>
+		<div class="article-content clearfix">
+			<div class="fl img-text " >
+				<img src="<%=item.imgurl%>">
+			</div>
+			<div class="article-content-text">
+				<%=item.getContentTxt.substring(0,100)%>
+			<span>……</span>
+			</div>
+			<div class="article-discuss fr">
+				<span><i class="glyphicon glyphicon-user"></i><%=item.adminname%></span>
+				<span><i class="glyphicon glyphicon-edit"></i><%=item.type%></span>
+				<span><i class="glyphicon glyphicon-eye-open"></i>(28)</span>
+				<span><i class="glyphicon glyphicon-time"></i>
+					<%=item.ctime.pattern("yyyy-MM-dd")%>
+				</span>
+			</div>
+		</div>
+	</article>
+
+<%})%>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<link rel="stylesheet" type="text/css" href="/static/common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/frozen/css/frozen.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/user/css/myinfo.css"/>
+		<title>修改昵称</title>
+	</head>
+	<body>
+		<input type="hidden" name="userid" value="<%=loginuser.id%>" />
+		<header class="ui-header ui-header-positive ui-border-b">
+			<a href="person.html">
+				<i class="ui-icon-prev"></i>
+			</a>
+		    <h1 class="person_head">修改昵称</h1>
+		</header>
+		
+		<section class="ui-container ui-center">
+			<div class="ui-flex  ui-flex-align-center ">
+			<div class="myinfo_bdy">
+				<div class="ui-form ui-border-t">
+				    <form action="#" >
+				        <div class="ui-form-item ui-form-item-show ui-form-item-link ui-border-b">
+				            <label for="#">旧昵称</label>
+				            <input id="old_name" type="text" value="<%=loginuser.username%>" readonly>
+				        </div>
+				        <div class="ui-form-item ui-form-item-show ui-border-b">
+				            <label for="#">新昵称</label>
+				            <input id="new_name" type="text" value="">
+				        </div>
+				    </form>
+				</div>
+				<button class="ui-btn-lg ui-btn-primary name_button">确定</button>
+			</div>
+		   </div>
+		</section>
+		
+		<footer class="ui-footer ui-footer-stable ui-border-t">
+		   
+		</footer>
+	</body>
+	<script type="text/javascript" src="/static/frozen/js/lib/zeptojs/zepto.min.js"></script>
+	<script type="text/javascript" src="/static/frozen/js/frozen.js"></script>
+	<script src="/static/common/js/base.remoter.js"></script>
+	<script src="/static/common/js/jquery.plugs.js"></script>
+	<script src="/static/modules/mk-rest/js/rest.js"></script>
+    <script src="/static/modules/mk-meta/index.js"></script>
+	<script type="text/javascript" src="/static/user/js/user.js"></script>
+</html>

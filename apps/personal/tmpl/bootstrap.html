@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Bootstrap Study</title>
+		<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/common/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="/static/personal/css/bootstrap.css">
+	</head>
+	<body>
+		
+		<div id="header">
+		</div>
+		<div class="container" id="mynavbar">
+			<nav class="navbar  navbar-default col-md-8 col-md-offset-2" role="navigation" style="background: #202020; margin-top:30px ; border-color: black;" >
+			 <div class="container-fluid">
+    
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynava" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">Brand</a>
+			    </div>
+					
+					<div id="mynava" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav " style="margin-left: 100px;"> 
+							<li class=" " ><a href="#"> HOME</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle = "dropdown"> ABOUT US <b class="caret"></b> </a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Mike</a></li>
+									<li><a href="#">Boke</a></li>
+									<li><a href="#">Wlik</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="#"> PORTFOLIO</a></li>
+							<li class=""><a href="#"> CONTACT</a></li>
+						</ul>
+					</div>
+			</nav>
+		</div>
+		<div id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-sm-3"></div>
+					<div class="col-md-7 col-sm-9" style="color: white;">
+						<h1 >welcome to</h1>
+						<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Family</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--<img src="img/a1.jpg" class="img-responsive"/>-->
+		
+		<div class="container" id="myconent">
+			<div class="conent conent1 col-sm-3">
+				<i class="fa fa-laptop fa-3x  col-sm-offset-4" style="padding: 20px;"></i>
+				<h3>  Responsive</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+			</div>
+			<div class="conent conent2 col-sm-3">
+				<i class="fa fa-mobile fa-4x  col-sm-offset-4" style="padding: 15px;"></i>
+				<h3>  Easy to use</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+			</div>
+			<div class="conent conent3 col-sm-3">
+				<i class="fa fa-cog fa-3x  fa-spin col-sm-offset-4" style="padding: 20px;"></i>
+				<h3>  Quick Support</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+			</div>
+		</div>
+
+		<div  class="container" >
+			<div class="col-sm-4">
+				<img src="/static/personal/bs-img/a2.jpg" class="img-responsive pig"/>
+			</div>
+			<div class="col-sm-4 " style="background: #191919;" >
+				<h3>Startup Business</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. 
+					Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.<br>
+                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+                    Dolore magna aliquam erat volutpat.
+				</p>
+				<button type="button" class="btn btn-default" id="mybtn1">	LEARN MORE</button>
+				
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<section>
+			<div class="container" style="text-align: center; margin-top: 50px;">
+				<h3 >Recent Projects</h3>
+				<p style="margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br />nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+			</div>
+		</section>
+		
+	<div class="container" id="my_picture" >
+		<img src="/static/personal/bs-img/a10.jpg" style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a11.jpg"  style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a12.jpg" style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a7.jpg" style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a8.jpg" style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a9.jpg" style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a13.jpg" style="height: 150px;"/>
+		<img src="/static/personal/bs-img/a14.jpg" style="height: 150px;"/>
+	</div>
+	<div id=""style="padding :12px;">
+		
+	</div>	
+	<button type="button" id="mybtn3"  class="btn btn-primary btn-lg col-sm-offset-5" data-toggle="modal" data-target="#myModal" style="margin-bottom: 30px;">
+	 View More
+	</button>
+
+	<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="image">
+			<div class="modal-content">
+				<div id="carousel-example-generic" class="carousel slide col-sm-8 " data-ride="carousel" style="padding-top: 20px ;">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+	
+					<div class="carousel-inner" role="listbox">
+						<div class="item item1 active">
+							<img src="/static/personal/bs-img/a3.jpg" alt="...">
+							<div class="carousel-caption">
+								<h3 id="mystr1"></h3>
+							</div>
+						</div>
+						<div class="item item2">
+							<img src="/static/personal/bs-img/a4.jpg" alt="...">
+							<div class="carousel-caption">
+								<h3 id="mystr2"></h3>
+							</div>
+						</div>
+						<div class="item item3">
+							<img src="/static/personal/bs-img/a5.jpg" alt="...">
+							<div class="carousel-caption">
+								<h3 id="mystr3"></h3>
+							</div>
+						</div>
+						<div class="item item4">
+							<img src="/static/personal/bs-img/a6.jpg" alt="...">
+							<div class="carousel-caption">
+								<h3 id="mystr4"></h3>
+							</div>
+						</div>
+					</div>
+	
+					
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<fooer>
+		<div class="container" style="background:#191919;">
+			<div class="col-sm-4">
+				<h3>NETEL</h3>
+						<p>Onetel is free Bootstrap v3.3.5 HTML5 layout <br /> from templatemo website. Feel free to use it for <br /> your website.</p>
+						<number style="color: #808080;">010-020-0340</number><br>
+						<email style="color: #808080;"> info@company.com</email>
+						<p> www.company.com</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Useful Links</h3>
+						<p>HTML5 Templates</p>
+						<p>CSS3 Tricks</p>
+						<p>Design Blog</p>
+						<p>Animations</p>
+			</div>
+			
+			<div class="col-sm-4">
+				<h3>Newsletter</h3>
+				<p>Lorem ipsum dolor sit amet, <br /> consectetuer adipiscing elit, sed diam <br /> nonummy nibh euismo.</p>
+				<form class="form-group">
+					<input type="email" class="form-control col-xs-3" name="email" id="" value="" placeholder="Enter your email" style="width: 70%;"  autorequired/>
+					<br /><br>
+					<button type="button" class="btn btn-default " id="mybtn2">	Submit</button>
+				</form>
+			</div>
+						
+					
+		</div>
+		
+		<div class=" col-sm-4 col-lg-offset-1"style="margin-top: 30px;">
+			<p>Copyright © 2084 Company Name .More <br /> Templates 黎明之战 - Collect from 黑暗骑士</p>
+		</div>
+		<ul class="nav nav-pills col-sm-6 " id="myfooter">
+			<li  ><a href=""><i class="fa fa-facebook" ></i></a></li>
+			<li><a href=""><i class="fa fa-twitter"  ></i></a></li>
+			<li><a href=""><i class="fa fa-dribbble" ></i></a></li>
+			<li><a href=""><i class="fa fa-pinterest" ></i></a></li>
+			<li><a href=""><i class="fa fa-behance"  ></i></a></li>
+			<li><a href=""><i class="fa fa-envelope-o"></i></a></li>
+		</ul>		
+		</div>
+	</fooer>
+	
+	
+		<script src="/static/common/js/jquery-2.1.1.min.js"></script>  
+		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/static/personal/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

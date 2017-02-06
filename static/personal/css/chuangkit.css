@@ -1,0 +1,333 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+}
+/*导航*/
+.header{
+	background: rgba(0,174,187,.8);
+}
+.nav{
+	width: 1200px;
+	margin: 0 auto;
+	height: 60px;
+}
+.logo{
+	display: inline-block;
+	padding-right: 100px;	
+}
+.logo img{
+	vertical-align: -15px;
+}
+.logo span{
+	font-size: 25px;
+	font-family:STSong;
+	font-weight: bolder;
+	
+}
+.nav ul{
+	padding-left: 100px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	
+}
+.nav ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 60px;
+	margin-left: 10px;
+	
+}
+.nav a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+.nav_login{
+	float: right;
+}
+.nav_login img{
+	vertical-align: -7px;
+	border-radius:50%;
+	border: 1px solid white;
+	background: white;
+}
+._login_box{
+	height: 70px;
+	width: 120px;
+	position: absolute;
+	background: #ffffff;
+	top: 60px;
+	margin-bottom: 0;
+	display: none;
+	z-index: 99;
+	
+}
+._login_box span a{
+	padding-left: 15px;
+	line-height: 30px;
+	color:#828282 ;
+}
+.nav_under{
+	margin-left: 10px;
+	position: relative;
+	top:-5px;
+	left:0px;
+	height: 0px;
+	width: 81px;
+	border :2px solid white;
+	transition:all 1s;	
+}
+.content{
+	width:1200px;
+	background: #f4f4f4;
+	margin: 0 auto;
+	
+}
+/* 幻灯片*/
+.myslide{
+	padding-top:50px ;
+	position: relative;
+}
+.myslide_left{
+	width: 1000px;
+	float: left;
+}
+.myslide_left img{
+	position: absolute;
+}
+.myslide_right{
+	float: right;
+	margin-left: 5px;
+
+}
+.myslide_right img{
+	height: 60px;
+	/*width: 195px;*/
+	padding-bottom: 7px ;
+	cursor: pointer;
+}
+.myslide_right button{
+	height: 40px;
+	width: 195px;
+	border: 0;
+	background: #39a9d0;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+}
+.active{
+	opacity: 0.3;
+}
+/*登录注册*/
+#login{
+	position: absolute;
+	height: 250px;
+	width: 350px;
+	border: 1px solid #b2b0b0;
+	display: none;
+	background: white ;
+	z-index: 99999;
+}
+#login img{
+	position: absolute;
+	top:7px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#login h3{
+	height: 40px;
+	background:#ddd ;
+	color:#666;
+	text-align: center;
+	line-height:40px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	cursor: move;
+}
+#reg{
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	border: 1px solid #b2b0b0;
+	display: none;
+	background: white ;
+	z-index: 99999;
+	position: absolute;
+	
+
+}
+#reg img{
+	position: absolute;
+	top:7px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#reg h3{
+	height: 40px;
+	background:#ddd ;
+	color:#666;
+	text-align: center;
+	line-height:40px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	cursor: move;
+}
+#reg dl{
+	padding: 0px;
+	margin: 0px;
+	color:#666;
+
+}
+#reg dl dd{
+	padding:0 0 10px 0;
+}
+#reg dl dd input{
+	padding:4px;
+}
+#reg dl dd input.text{
+	
+}
+#reg dl{
+	
+}
+
+.info_user{
+
+	position: absolute;
+	right:20px;
+	font-size: 10px;
+	width: 165px;
+	height:32px;
+	padding-left:20px;
+	-webkit-clip-path: polygon(20px 0, 185px 0 ,185px 32px , 20px 32px,20px 20px,0 10px,20px 10px );
+	background: #ddd;
+}
+.user,.pass,.login_btn{
+	color:#666;
+	text-align: center;
+	line-height:40px;
+
+}
+.login_btn button{
+	height: 30px;
+	width:60px;
+	background: #85dc66;
+	cursor: pointer;
+}
+
+.login_footer a{
+	text-decoration: none;
+	font-size:15px;
+
+}
+.login_footer{
+	position: absolute;
+	bottom: 10px;
+	right: 13px;
+}
+
+
+
+/*标签*/
+.label{
+	
+}
+.label ul{
+	display: inline-block;
+	
+}
+.label li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.label1,.label2,.label3{
+	line-height: 20px;
+}
+.label ul li:nth-child(1){
+	color:#00b4ce;
+
+}
+/*瀑布流*/
+.container-fluid {
+  padding-top:20px ;
+  }
+.box {
+  margin-bottom: 20px;
+  float: left;
+  width: 220px;
+  }
+  .box img {
+  max-width: 100%
+}
+.masonry_btn{
+	padding: 50px;
+	width: 1200px;
+	text-align: center;
+}
+.masonry_btn button{
+	height: 35px;
+	padding: 10px;
+	background: #ffffff;
+	border: 0;
+	font-size: 16px;
+	color: #8a8a8a;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.masonry_btn span button{
+	width:50px
+}
+.masonry_btn button:hover{
+	opacity:0.5;
+}
+.active{
+	background:#00aebb !important;
+}
+/*尾部*/
+.foot{padding-top:50px ;
+	padding: 20px;
+	background:#1f1f21 ;
+	color:#8f8f90;
+}
+.foot ul{
+	margin: 0;
+	padding: 0;
+}
+.foot ul li{
+	list-style: none;
+	display: inline-block;
+}
+.foot_ul1 li{
+	margin-right:65px ;
+	color:#ffffff ;
+}
+
+.address span{
+	padding-right: 25px;
+}
+.foot hr{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	
+}
+.foot span{
+	line-height: 30px;
+}
+.foot_ul2 li{
+	margin-right:25px ;
+}
+.foot_content{
+	width: 900px;
+	padding-top: 200px;
+    margin: 0 auto;
+
+}

@@ -1,0 +1,200 @@
+user www-data;
+worker_processes 1;
+pid /var/run/nginx.pid;
+
+events {
+	worker_connections 2000;
+	# multi_accept on;
+}
+
+http {
+
+	##
+	# Basic Settings
+	##
+
+	sendfile on;
+	tcp_nopush on;
+	tcp_nodelay on;
+	keepalive_timeout 65;
+	types_hash_max_size 4096;
+	client_max_body_size 10m;
+	# server_tokens off;
+
+	# server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
+
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+
+	##
+	# Logging Settings
+	##
+
+	access_log /var/log/nginx/access.log;
+	error_log /var/log/nginx/error.log;
+
+	##
+	# Gzip Settings
+	##
+
+	gzip on;
+	gzip_disable "msie6";
+
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+	##
+	# nginx-naxsi config
+	##
+	# Uncomment it if you installed nginx-naxsi
+	##
+
+	#include /etc/nginx/naxsi_core.rules;
+
+	##
+	# nginx-passenger config
+	##
+	# Uncomment it if you installed nginx-passenger
+	##
+	
+	#passenger_root /usr;
+	#passenger_ruby /usr/bin/ruby;
+
+	##
+	# Virtual Host Configs
+	##
+	
+	log_format main '$remote_addr $host $remote_user [$time_local] "$request" ';
+	
+	server {
+		listen 80;
+		server_name 42.96.144.63 www.ebaiding.com ebaiding.com;
+		access_log logs/ebaiding.access.log main;  
+		server_name_in_redirect off; 
+		
+		location ~ /.svn/ {
+			deny all;
+		}
+		
+		location / {
+			proxy_pass        http://localhost:9006;
+			proxy_set_header  X-Real-IP  $remote_addr;
+		}
+		
+		location /bestwinner {
+				proxy_pass        http://221.181.73.92:8088/bestwinner;
+				add_header Access-Control-Allow-Origin *;
+				add_header Access-Control-Allow-Headers  Origin,X-Requested-With,Content-Type,Accept,If-Modified-Since;
+				proxy_set_header  X-Real-IP  $remote_addr;
+		}
+		
+		location ~ ^/web|static|upload|dayj/ {
+			root /var/www/daxuego;
+			gzip on;
+			gzip_static on;
+		}
+	}  
+	
+	server {
+		listen 80;
+		server_name xxs.ebaiding.com song.ebaiding.com;
+		access_log logs/ebaiding.access.log main;  
+		server_name_in_redirect off; 
+		location / {
+			proxy_pass        http://localhost:8090;
+			proxy_set_header  X-Real-IP  $remote_addr;
+		}
+		
+		location /bestwinner {
+			proxy_pass        http://221.181.73.92:8088/bestwinner;
+			add_header Access-Control-Allow-Origin *;  
+			add_header Access-Control-Allow-Headers  Origin,X-Requested-With,Content-Type,Accept,If-Modified-Since;
+			proxy_set_header  X-Real-IP  $remote_addr;
+		}
+		
+		location ~ /.svn/ {
+			deny all;
+		}
+		
+		location ~ ^/web|static|upload/ {
+			root /var/www/kaisong;
+			gzip on;
+			gzip_static on;
+		}
+	}  
+
+	
+	server {
+		listen 80;
+		server_name www.imokee.com imokee.com;
+		access_log logs/imokee.access.log main;  
+		server_name_in_redirect off; 
+		location / {
+			root /var/www/litteam/notice;
+			gzip on;
+			gzip_static on;
+		}
+	}  
+	
+	server {
+		listen 80;
+		server_name f.imokee.com;
+		access_log logs/f.imokee.access.log main;  
+		server_name_in_redirect off;
+		location / {
+			proxy_pass        http://localhost:8080;
+			proxy_set_header  X-Real-IP  $remote_addr;
+		}		
+		location ~ ^/static/ {
+			root /var/www/fileserver;
+			gzip on;
+			gzip_static on;
+		}
+		
+		location ~ ^/(upload)/ {
+			root /var/www/fileserver;			
+			if (!-f $request_filename) {
+				rewrite /upload/projectavator/(.*)    /upload/projectavator/defaultavator.png;
+                rewrite /upload/teamavator/(.*)    /upload/teamavator/defaultavator.png;
+				rewrite /upload/useravator/(.*)    /upload/useravator/defaultavator.png;
+				rewrite /upload/circleavator/(.*)    /upload/circleavator/defaultavator.png;
+				rewrite /upload/projectlogo/(.*)    /upload/projectlogo/default.png;
+                rewrite /upload/teamlogo/(.*)    /upload/teamlogo/default.png;
+				rewrite /upload/userlogo/(.*)    /upload/userlogo/default.png;
+			}
+			
+			gzip on;
+			gzip_static on;
+		}
+
+	}
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+}
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+# 
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+# 
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+# 
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/static/common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/frozen/css/frozen.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/user/css/myinfo.css"/>
+		<title>个人中心</title>
+	</head>
+	<body>
+		<header class="ui-header ui-header-positive ui-border-b">
+			<h1>个人中心</h1>
+		</header>
+		  <section class="ui-container">
+			<section id="list">
+				<div class="demo-item">
+					<div class="demo-block">
+						<ul class="ui-list ui-list-one ui-list-link ui-border-tb ">
+								<li class="ui-border-t" data-href="person.html">
+									<div class="ui-list-thumb">	
+										<span class="myinfo_headweimg"></span>
+									</div>
+									<div class="ui-list-info">
+										#if(loginuser.username){
+											<span class="ui-txt-info"><%=loginuser.mobile%></span>
+										#}else{
+											<span>暂无</span>
+										#}
+									</div>
+								</li>
+						
+							<li class="ui-border-t" data-href="icon.html">
+							我的收藏
+							</li>
+							<li class="ui-border-t" data-href="layout.html">
+							我的团购
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+
+ 
+        </section><!-- /.ui-container-->
+		<div class="ui-btn-wrap">
+			<button class="ui-btn-lg ui-btn-danger signOut">退出</button>
+		</div>
+		
+		
+		
+	<script type="text/javascript" src="/static/frozen/js/lib/zeptojs/zepto.min.js"></script>
+	<script type="text/javascript" src="/static/frozen/js/frozen.js"></script>
+	<script src="/static/common/js/base.remoter.js"></script>
+	<script src="/static/common/js/jquery.plugs.js"></script>
+	<script src="/static/modules/mk-rest/js/rest.js"></script>
+		<script src="/static/modules/mk-meta/index.js"></script>
+	<script src="/static/user/js/user.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

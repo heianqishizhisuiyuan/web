@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<!-- 响应屏幕变化 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>微style-注册</title>
+	<!-- bootstrp文件 -->
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+	<!-- 皮肤 -->
+	<link rel="stylesheet" href="/static/admin/css/_all-skins.min.css">
+	<!-- icon -->
+	<!--<link rel="stylesheet" href="/static/common/css/ionicons.min.css">-->
+	<!-- font -->
+	<link rel="stylesheet" href="/static/common/css/font-awesome.min.css">
+	<!-- 主题样式表 -->
+	<link rel="stylesheet" href="/static/admin/css/AdminLTE.min.css">
+	
+</head>
+<body class="hold-transition login-page">
+	<div id="wrapper-login">
+    <div class="login-box">
+        <div class="login-box-body">
+          <p class="login-box-msg">管理员注册</p>
+          <form action="" id="biz_regist_form" method="">
+          	<!--<div class="form-group has-feedback">
+              <input type="text" class="form-control" name="biz_name" placeholder="机构名称">
+              <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>-->
+           <div class="form-group has-feedback">
+              <input type="text" class="form-control" name="username" placeholder="用户名">
+              <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+              <input type="text" class="form-control" name="mobile" placeholder="手机号">
+              <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+              <div class="input-group input-group-sm">
+                <input class="form-control" name="valicode" type="text" placeholder="请输入手机验证码">
+                <span class="input-group-btn">
+                  <button class="btn btn-info btn-flat getcode" type="button">获取手机验证码</button>
+                </span>
+              </div>
+            </div> 
+           <!-- <div class="form-group has-feedback">
+              <input type="text" class="form-control" name="biz_address" placeholder="机构地址">
+              <span class="glyphicon glyphicon-map-marker form-control-feedback"></span>
+            </div>-->
+            <div class="form-group has-feedback">
+              <input type="password" class="form-control" name="password" placeholder="密码">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div> 
+            <div class="row">             
+              <div class="col-xs-4">
+                <button type="button" id="biz_regist" class="btn btn-primary btn-block btn-flat">注册</button> 
+              </div><!-- /.col -->
+              <div class="col-xs-8 clearfix">
+                <a class="pull-right" href="/login.html" style="line-height:34px;">去登陆</a>
+              </div> 
+            </div>
+          </form>
+        </div><!-- /.login-box-body -->
+    </div>  
+  	<!-- jq -->
+  	
+  	 
+  	
+  	
+  	
+   	<script src="/static/frozen/js/lib/zeptojs/zepto.min.js"></script>
+   	 <script src="/static/modules/mk-rest/js/rest.js"></script>
+    <script src="/static/modules/mk-meta/index.js"></script>
+  	<!-- bs -->
+    <script src="/static/common/js/base.remoter.js"></script>
+    <script src="/static/common/js/jquery.plugs.js"></script>
+    <script src="/static/admin/js/admin.js"></script>
+   <!-- <script src="/static/admin/js/biz_admin.js"></script>-->
+    </div>
+</body>
+</html>

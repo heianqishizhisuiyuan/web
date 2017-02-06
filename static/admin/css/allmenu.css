@@ -1,0 +1,82 @@
+#search{
+	width:200px;
+	height:40px;
+	
+}
+.float-l{
+	float:left
+}
+.float-l span{
+line-height: 40px;
+}
+.float-r{
+	float:right
+}
+.oneMenu-ul {
+	
+	margin: 0;
+	padding: 0;
+	
+}
+.oneMenu-ul li,.everyday-ul li{
+	list-style: none;
+	height: 50px;
+	width: 100px;
+	background-color: #fff;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+.oneMenu-ul li:nth-child(2):hover,.oneMenu-ul li:nth-child(3):hover{
+	cursor: pointer;
+	
+}
+.everyday-li-public,.everyday-li-list{
+	cursor: pointer;
+}
+.active{
+	background: orange !important;
+}
+#showArticle-list{
+	    border-color:red
+}
+#showArticle-list tr{
+	border-color:black;
+}
+
+#showArticle-list td{
+	width: 20%;
+}
+.everydaywords{
+	width: 60%;
+	font-size: 18px;
+}
+#report_evertdayword_btn{
+	margin-top: 10px;
+}
+/*轮播器*/
+.carousel-set-form input{
+	width: 50%;
+}
+.img-display{
+	margin-top: 20px;
+	background: #aaa;
+	height:200px;
+	width: 40%;
+}
+.margin-set{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

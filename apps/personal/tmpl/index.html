@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+		<title>微study</title>
+	<link rel="stylesheet" href="/static/common/css/reset.css">
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/common/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="/static/personal/css/style.css">
+	<link rel="shortcut icon" type="image/x-ico" href="/static/personal/img/study.png"/>
+	</head>
+	<body>
+		<input type="hidden" id="_pagecount"  value="<%=articles1%>"/>
+		
+		<div class="container">
+			<div class="logo ">
+				<img src="/static/personal/img/logo.png"/>
+				<div id="qrcode" >
+				</div>
+			</div>
+			<!--导航-->
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						</button>
+						<a href="javascript:void(0)" class="navbar-brand">微study</a>
+					</div>
+					<div class="collapse navbar-collapse" id="main-nav">
+						<ul class="nav navbar-nav" id="main_nav">
+							<li class="active"><a href="../">首页</a></li>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">文章分类<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="../articleType/css.html">前端css</a></li>
+									<li><a href="../articleType/js.html">前端js</a></li>
+									<li><a href="../articleType/node.html">前端node.js</a></li>
+									<li><a href="../articleType/life.html">mylife</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)" class="display">案例展示</a></li>
+							
+							<li><a href="javascript:void(0)">关于我</a></li>
+						</ul>
+						<form class="navbar-form navbar-right">
+					        <div class="form-group">
+					          	<input type="text" class="form-control" placeholder="热搜">
+					        </div>
+					        <button type="submit" class="btn btn-default">搜一搜</button>
+					     </form>
+					</div>
+				</div>
+			</nav>
+			<!--内容-->
+			<div id="main" class="clearfix">
+				<div class="rightslidbar fr" >
+					<div class="myinfo clearfix">
+						<div class="fl myinfo-img">
+							<img src="/static/personal/img/header.jpg" alt="" />
+						</div>
+						<div class="myinfo-text  fl">
+							<p>王超，毕业于德州学院，目前济南，平时喜欢看看电影，专注web前端偏前领域，热衷于自己创建的每一个程序。</p>
+							<email><img src="/static/personal/img/email.png"/> 12003956026@qq.com</email>
+							<div class="mylink">
+								<img src="/static/personal/img/qq (1).png" alt="" />
+								<a href=""><img src="/static/personal/img/weibo.png" alt="" /></a>
+							</div>
+						</div>
+					</div>
+					<div class="eveyday-talk">
+						
+							<%everydayword.forEach(function(item,i){%>
+								<p>
+									<input type="" name="" id="eveyday-talk-txt" value="<%=item.content%>" />
+								
+								</p>
+								<time class="everyday-time">
+									<%=item.ctime.pattern("yyyy-MM-dd")%>
+								</time>
+							<%})%>
+						
+					
+					
+						
+					</div>
+					<div class="new-article">			
+						<ul>
+						<%article.forEach(function(item,i){%>					
+							<li class="new-article-alltitle">
+								<h4>最新动态</h4>
+							</li>
+							<li class="clearfix">
+								<div class="new-article-img fl">
+									<img class="img-responsive" src=<%=item.imgurl%>>
+								</div>
+								<div class="new-article-title fl">
+									<h4><%=item.title%></h4>
+								</div>
+							</li>
+							<hr />
+							
+						<%})%>	
+						</ul>
+					</div>
+					<hr />
+					<div class="friend-link">
+						<h4>友情链接</h4>
+					</div>
+					<br />
+					<a href="http://blog.comehere.online/blog" class="link-xuhao">徐浩</a>
+				</div>
+				<div class="content fl" >
+					<!--轮播器-->
+					
+					<div   class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+						   	<li data-target="#scroll-img" data-slide-to="0" class="active"></li>
+						    <li data-target="#scroll-img" data-slide-to="1"></li>
+						    <li data-target="#scroll-img" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner croll-img" >
+						    <div class="item active">
+						      <img src="/static/personal/img/carousel (1).jpg">
+						    </div>
+						    <div class="item">
+						      <img src="/static/personal/img/carousel (2).jpg">
+						    </div>
+						    <div class="item">
+						      <img src="/static/personal/img/carousel (3).jpg">
+						    </div>
+						</div>
+					</div>
+					<div id="article">
+						<input type="hidden" id="now_page"  value="<%=pages%>"/>
+						<%article.forEach(function(item,i){%>
+							<article class="article">
+								<input type="hidden" value="<%=item.id%>" class="artid"/>
+								<h3 class="article-title">
+									<a href="../anArticle/<%=item.id%>.html"><%=item.title%></a>
+								</h3>
+								<div class="article-content clearfix">
+									<div class="fl img-text " >
+										<img src="<%=item.imgurl%>">
+									</div>
+									<div class="article-content-text">
+										<%=item.getContentTxt.substring(0,100)%>
+									<span>……</span>
+									</div>
+									<div class="article-discuss ">
+										<span><i class="glyphicon glyphicon-user"></i><%=item.adminname%></span>
+										<span ><i class="glyphicon glyphicon-edit"></i><%=item.type%></span>
+										<span><i class="glyphicon glyphicon-eye-open"></i>(28)</span>
+										<span><i class="glyphicon glyphicon-time"></i>
+											<%=item.ctime.pattern("yyyy-MM-dd")%>
+										</span>
+									</div>
+								</div>
+							</article>
+						<%})%>
+					</div>
+					<div class="page">
+						<nav>
+							<!--<span><a href='#'>&laquo<a/></span>-->
+						  	<ul id="_pages">
+						  		<div class="page-wrapp index-page-wrapp">
+							
+								</div>
+							 </ul>
+							<!--<span><a href='#'>&raquo<a/></span>-->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>
+				Copyright © personal Company Name 梦超
+			</p>
+		</footer>
+		<div class="toup">
+			<i class="glyphicon glyphicon-arrow-up"></i>
+		</div>
+	
+		<script src="/static/common/js/jquery-2.1.1.min.js"></script>  
+		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/static/common/js/qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/modules/mk-rest/js/rest.js"></script>
+		<script src="/static/common/js/admin.plugs.js"></script>
+		<script src="/static/personal/js/main.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

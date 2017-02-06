@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>最好的ppt制作工具</title>
+		<link rel="stylesheet" type="text/css" href="/static/personal/css/chuangkit.css"/>
+		<link rel="shortcut icon" type="image/x-icon" href="/static/personal/chuangkit-img/5002.png"/>
+	</head>
+	<body>
+		<!--导航-->
+		<div class="header">
+			<div class="nav">
+				<div class="logo">
+					<img src="/static/personal/chuangkit-img/ico (5).png"/><span class="ico_span">创客贴</span>
+				</div>
+				<ul class="nav_ul">
+					<li><a href="javascript:void(0)">开启设计</a></li>
+					<li><a href="javascript:void(0)">我的设计</a></li>
+					<li><a href="javascript:void(0)">模版中心</a></li>
+					<li><a href="javascript:void(0)">使用教程</a></li>
+					<li><a href="javascript:void(0)">文章</a></li>
+					<li><a href="javascript:void(0)">社区</a></li>
+					<li><a href="javascript:void(0)">成员</a></li>
+					<div class="nav_under">
+					</div>
+				</ul>
+				<ul class="nav_login">
+						<li><a href="javascript:void(0)">未登陆</a></li>
+						<img src="/static/personal/chuangkit-img/login (1).png"/>
+						<div class="_login_box">
+							<span id="">
+								<a href="javascript:void(0)" class="login">登录</a>
+							</span><br />
+							<span id="">
+								<a href="javascript:void(0)" class="reg">注册</a>
+							</span>
+						</div>
+				</ul>
+			</div>
+		</div>
+		<!--登录 注册-->
+		<div id="login">
+			<img src="/static/personal/chuangkit-img/close.png"  class="login_close" alt="" ondragstart="return false;">
+			<h3  id="login_h3">会员注册</h3>
+			<div class="user">账 号：<input type="text" name="username" placeholder="账号"></div>
+			<div class="pass">密 码：<input type="password" name="password" placeholder="密码"></div>
+			<div class="login_btn"><button>确定</button></div>
+			<div class="login_footer">
+				<a href="">注册新用户</a> |
+				<a href="">忘记密码?</a>
+			</div>
+		</div>
+		<div id="reg">
+			<img src="/static/personal/chuangkit-img/close.png"  class="reg_close" alt="" ondragstart="return false;">
+			<h3  id="reg_h3">注册网站</h3>
+			<dl>
+				<dd>用 户 名:<input type="text" name="user" class="text" />
+					<span class="info info_user">请输入用户名，2~20 位，
+					由字母、数字和下划线组成！</span>
+				 </dd>
+				<dd>密&nbsp;&nbsp;码:<input type="password" name="pass" class="text" /></dd>
+				<dd>重复密码:<input type="password" name="repass"></dd>
+				<dd>提&nbsp;&nbsp;问:<select name="question" id="" style="width:180px;height:25px">
+								<option value="0">- - - - 请选择 - - - -</option>
+								<option value="1">- - 您最喜欢吃的菜</option>
+								<option value="2">- - 您的狗狗的名字</option>
+								<option value="3">- - 您的出生地</option>
+								<option value="4">- - 您最喜欢的明星</option>
+								</select>
+				</dd>
+				<dd>回&nbsp;&nbsp;答:<input type="text"></dd>
+				<dd>电子邮件:<input type="email" name="email"></dd>
+				<dd>生&nbsp;&nbsp;日:<select name="year">
+								<option value="0">- 请选择 -</option>
+								</select> 年
+								<select name="month">
+								<option value="0">- 请选择 -</option>
+								</select> 月
+								<select name="day">
+								<option value="0">- 请选择 -</option>
+								</select> 日
+				</dd>
+				<dd><span style="vertical-align:100px">备&nbsp;&nbsp;注:</span><textarea name="" id="" cols="30" rows="7" style="width:300px">
+								</textarea>
+								<br>
+								<span style="padding:0 0 0 250px ">还可以输入150个字</span>
+				</dd>
+				<dd style="padding:0 0 0 70px"><button >注册</button></dd>
+			</dl>
+		</div>
+		
+		
+		
+		
+		<!-- 内容区-->
+		<div class="content">
+			<!--幻灯片-->
+			<div class="myslide">
+				<div class="myslide_right">
+					<div><img src="/static/personal/chuangkit-img/slide (1).jpg"/></div>
+					<div><img src="/static/personal/chuangkit-img/slide (2).jpg"/></div>
+					<div><img src="/static/personal/chuangkit-img/slide (3).jpg"/></div>
+					<div><img class="active" src="/static/personal/chuangkit-img/slide (4).jpg"/></div>
+					<button>查看所有专题</button>
+				</div>
+				<div class="myslide_left">
+					<img src="/static/personal/chuangkit-img/slide (1).jpg"/>
+					<img src="/static/personal/chuangkit-img/slide (2).jpg"/>
+					<img src="/static/personal/chuangkit-img/slide (3).jpg"/>
+					<img src="/static/personal/chuangkit-img/slide (4).jpg"/>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<!--标签分类-->
+			<div class="label">
+				<div class="label1">
+					<label  >
+						模板分类:
+					</label>
+					<ul>
+						<li>全部</li>
+						<li>模板分类</li>
+						<li>社交媒体</li>
+						<li>广告印刷</li>
+						<li>工作文档</li>
+						<li>生活</li>
+						<li>其他</li>
+					</ul><br />
+					<ul  style="margin-left: 80px;">
+							<li >全部</li>
+					</ul>
+				</div>
+				<div class="label2">
+					<label  >
+						热门标签:
+					</label>
+					<ul>
+						<li>无</li>
+						<li>美食</li>
+						<li>励志</li>
+						<li>打折促销</li>
+						<li>旅游</li>
+						<li>运动</li>
+						<li>文艺</li>
+						<li>热点</li>
+						<li>活动宣传</li>
+						
+					</ul>
+				</div>
+				<div class="label3">
+					<label  >
+						排&nbsp&nbsp序:
+					</label>
+					<ul>
+						<li>热门推荐</li>
+						<li>嘴都使用</li>
+						<li>最新上传</li>
+						<li>最多收藏</li>
+					
+					</ul>
+				</div>
+			</div>
+			<!--模板展示-->
+			
+			<div class="container-fluid" id="masonry">
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (2).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (3).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (4).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (5).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (6).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (7).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (8).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (9).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (10).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (40).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (12).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (13).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (14).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (15).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (16).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (17).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (18).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (19).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (20).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (21).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (22).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (23).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (24).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (25).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (26).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (27).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (28).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (29).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (30).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (31).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (32).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (33).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (34).jpg"/></div>
+				<div class="box"><img src="/static/personal/chuangkit-img/mesonry/Masonry (35).jpg"/></div>		
+			</div>
+			<div class="masonry_btn">
+				<button>上一页</button> <span><button class="active">1</button>...<button>3</button> <button>4</button>
+				<button>5</button>...<button>85</button></span> <button>下一页</button>
+				
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="foot">
+			<div class="foot_content">
+				<ul class="foot_ul1">
+					<li>友情链接</li>
+					<li>市场合作</li>
+					<li>更多链接</li>
+				</ul>
+				<div class="address">
+					<span>媒体联系：market@chuangkit.com</span>
+					<span>市场合作：market@chuangkit.com </span> <br />
+					<span>友链交换：service@chuangkit.com</span>
+				</div>
+				<hr />
+				<ul class="foot_ul2">
+					<li>免责声明</li>
+					<li>联系我们</li>
+					<li>隐私协议</li>
+					<li>服务条款</li>
+					<li>加入我们</li>
+					<li>使用条款</li>
+					<li>关于我们</li>
+				</ul>
+				<span>Copyright©chuangkit@2015-2016    京ICP备 14056892号-1</span>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<script src="/static/common/js/jquery-2.1.1.min.js"></script>  
+		<script src="/static/personal/chuangkit-mm/js/masonry-docs.min.js" type="text/javascript"></script>
+		<script src="/static/personal/js/chuangkit.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

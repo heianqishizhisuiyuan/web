@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<!-- 响应屏幕变化 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>微style-登陆</title>
+	<!-- bootstrp文件 -->
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+	<!-- 皮肤 -->
+	<link rel="stylesheet" href="/static/admin/css/_all-skins.min.css">
+	<!-- icon -->
+	<!--<link rel="stylesheet" href="/static/common/css/ionicons.min.css">-->
+	<!-- font -->
+	<link rel="stylesheet" href="/static/common/css/font-awesome.min.css">
+	<!-- 主题样式表 -->
+	<link rel="stylesheet" href="/static/admin/css/AdminLTE.min.css">
+	
+</head>
+<body class="hold-transition login-page">
+	<div id="wrapper-login">
+    <div class="login-box">
+        <div class="login-box-body">
+          <p class="login-box-msg">管理员登陆</p>
+          <form action="" id="loginForm" method="">
+            <div class="form-group has-feedback">
+              <input type="text" class="form-control" name="mobile" placeholder="手机号">
+              <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+              <input type="password" class="form-control" name="password" placeholder="密码">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">     
+              <div>
+                <a class="pull-right" href="/admin/forget-password.html" style="line-height:34px;margin-right:15px;">忘记密码？</a>
+              </div> 
+            </div>
+            <div class="row">             
+              <div class="col-xs-4">
+                <button type="button" id="biz_login" class="btn btn-primary btn-block btn-flat">登陆</button> 
+              </div><!-- /.col -->
+              <div class="col-xs-8 clearfix">
+                <a class="pull-right" href="regist.html" style="line-height:34px;">立即注册</a>
+              </div> 
+            </div>
+            
+          </form>
+        </div><!-- /.login-box-body -->
+    </div>  
+    
+    
+  
+    
+  	<!-- jq -->
+  	<script src="/static/frozen/js/lib/zeptojs/zepto.min.js"></script>
+  	<!-- bs -->
+    <script src="/static/common/js/base.remoter.js"></script>
+    <script src="/static/common/js/jquery.plugs.js"></script>
+    <script src="/static/admin/js/admin.js"></script>
+    <!--<script src="/static/admin/js/biz_admin.js"></script>-->
+    </div>
+</body>
+</html>

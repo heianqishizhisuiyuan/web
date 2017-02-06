@@ -1,0 +1,117 @@
+body{
+	background: #101010;
+}
+
+#header{
+	background: black;
+	height: 70px;
+}
+#mynavbar{
+	position:absolute;
+	top:20px
+}
+#mynavbar li,{
+	padding: 10px 5px;
+}
+.navbar-brand{
+	position: relative;
+}
+#myconent{
+	position: relative;
+}
+.conent{
+	height: 320px;
+	width:300px;
+	position: relative;
+	top:-30px;
+	transition:top 0.5s;
+	
+}
+.conent1{
+	background:#c14000 ;
+	margin:0 20px;
+	
+}
+.conent2{
+	background:#009988 ;
+	margin:0 20px;
+}
+
+.conent3{
+	background: #ffa500;
+	margin-left: 20px;
+}
+
+.conent:hover{
+	top:-50px
+}
+#mybtn1,#mybtn2{
+	background: #191919;
+	border:2px solid white;
+	color:white;
+	margin-top: 20px;
+	transition:background 0.8s;
+	
+}
+#mybtn1{
+	margin-bottom: 10px;
+}
+#mybtn2:hover{
+	background: #009988;
+	
+}
+#mybtn1:hover{
+	background: #009988;
+	
+}
+.my_picture img{
+	display: inline-block;
+	float: left;
+	height: 100px;
+}
+h3{
+	color: white;
+}
+#myfooter li{
+	background:#191919 ;
+	transition: background 0.8s;
+	margin: 30px 15px;
+}
+#myfooter li:hover{
+	background: #d54ab6;
+}
+p{
+	color: #808080;
+}
+p:hover{
+	color: white;
+}
+#myconent p{
+	color:white;
+}
+#carousel-example-generic{
+	height: 100%;
+	width: 100%;
+}
+#myworld{
+	position: absolute;
+	top: 200px;
+}
+
+@media only screen and (max-width: 765px)  {
+	#myworld{
+		position: absolute;
+		top:150px
+	}
+}
+#home {
+  background: url("/static/personal/bs-img/a1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+.pig{
+	min-height: 280px;
+}

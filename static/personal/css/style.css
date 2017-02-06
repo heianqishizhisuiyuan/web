@@ -1,0 +1,328 @@
+
+body{
+	background: #f7f5f5;
+	padding: 0;
+	margin: 0;
+	
+}
+a:hover{
+	text-decoration:none;
+	
+}
+
+.logo{
+	margin-top: 10px;
+}
+#qrcode{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+#main{
+	min-height: 700px;
+}
+.content{
+	width: 70%;
+}
+.rightslidbar{
+	width:27%;
+	overflow: hidden;
+}
+@media only screen and (max-width: 1000px){
+	.rightslidbar{
+		display: none;
+	}
+	.content{
+		width: 100%;
+	}
+}
+#article{
+	
+	margin-top:20px ;
+}
+.article{
+	background: #fff;
+	padding: 10px;
+	margin-top: 10px;
+	position: relative;
+}
+.article-title{
+	font-family: "微软雅黑";
+	color:#7b7a7a;
+	cursor:pointer;
+	display: inline-block;
+}
+.article-title:hover{
+	color: #458994;
+}
+.article-content-text{
+	padding-bottom: 30px;
+}
+.img-text img{
+	height: 100px;
+	width: 200px;
+	margin:0 10px 10px 0px;
+}
+@media only screen and (max-width: 570px){
+    .img-text img{
+		width: 100%;
+	}
+	
+}
+.article-content{
+	
+}
+
+.article-discuss{
+	position: absolute;
+	bottom: 10px;
+	right: 5%;
+}
+.article-discuss span{
+	margin-left: 15px;
+}
+
+.page{
+	text-align: center;
+	margin-top: 10px;
+	background: #fff;
+}
+.footer{
+	margin-top: 15px;
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 15px;
+	text-align: center;
+	color: #fff;
+	background: #2f2f2f;
+	/*position: absolute;*/
+	
+	
+}
+.footer p{
+	margin: 0;
+}
+.toup{
+	
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	background: #2f2f2f;
+	text-align: center;
+}
+.toup i{
+	line-height:50px ;
+	color: #fff;
+	font-size: 40px;
+}
+.myinfo{
+	background: #fff;
+}
+.myinfo-img img{
+	height: 150px;
+	width: 150px;
+	margin: 5px;
+	border: 1px solid  #ddd;
+}
+.myinfo-text{
+	padding: 2px;
+	border: 1px solid #ddd;
+
+}
+.eveyday-talk{
+	padding: 40px;
+	margin: 10px 0;
+	border-radius: 2px;
+	background: url('../img/blank.png') no-repeat;
+	background-size: 100% 100%;
+	height: 200px;
+	position: relative;
+}
+.everyday-time{
+	position:absolute;
+	bottom: 45px;
+	right: 55px;
+	color:#fff;
+	
+}
+.eveyday-talk p{
+	font-size: 19px;
+	font-family: '华文行楷';
+	color:#fff;
+}
+.article-list{
+	background: #fff;
+	margin-top: 10px;
+	border: 2px solid #0060BF;
+	text-align: center;
+}
+.article-date, .article-type{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+}
+
+.new-article{
+	background: #fff;
+	margin-top: 10px;
+	padding: 10px;
+}
+.new-article-alltitle{
+	font-family: "微软雅黑";
+}
+.new-article-img{
+	width: 40%;
+	margin-right: 10px;
+
+}
+.new-article-title{
+	width: 55%;
+}
+.tell-me{
+	background: #fff;
+	margin-top: 10px;
+	padding: 10px;
+	
+}
+.tell-me-btn{
+	padding: 5px;
+}
+.tell-me input[type=button]{
+	width: 70px;
+	height: 40px;
+}
+.visitor-id{
+	display: inline-block;
+	width: 40%;
+}
+#visitor-id{
+	height:40px;
+}
+.visitor-email{
+	
+	width: 40%;
+}
+#visitor-email{
+	height:40px;
+}
+#floor{
+	display: inline-block;
+	margin-left: 15px;
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+.other-tell-id{
+	color: blue;
+}
+.required-img{
+	color: #807f7f;
+}
+.other-tell-content{
+    text-indent: 20px;
+	padding: 10px;
+	text-indent: 20px;
+	font-family: "微软雅黑";
+	line-height: 30px;
+}
+.visitor-header img{
+	height: 50px;
+	width: 50px;
+}
+.back_home{
+	font-size: 25px;
+	color: orange;
+	cursor: pointer;
+}
+.two-menu{
+	font-size: 15px;
+}
+
+
+#_pages {
+	display: inline-block;
+	overflow:hidden ;
+	width: 260px;
+	margin-top:20px ;
+	
+}
+.page-wrapp{
+	text-align:left ;
+	margin: 0;
+	padding: 0;
+	width: 2000px;
+	
+}
+
+#_pages li {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+	width: 65px;
+	border: 1px solid #ddd ;
+	height: 40px;
+
+}
+#_pages li a{
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 18px;
+	text-decoration: none;
+/*	color:#524f4f;*/
+	height: 100%;
+	width: 100%;
+	
+}
+#_pages li a:hover{
+	color: #369;
+}
+.page-li a{
+	background: #337ab7;
+	color:#fff !important;
+}
+.friend-link{
+	width: 70%;
+	padding:5px;
+	background: orange;
+	border-bottom-right-radius:40px ;
+	border-top-right-radius:40px;
+}
+.link-xuhao{
+	font-size: 18px;
+}
+/*作品展示*/
+.word-name{
+	padding: 10px 0;
+	display: inline-block;
+	font-size: 14px;
+}
+.word-name a{
+	color: black;
+}
+.word-name a:hover{
+	color:orange;
+	cursor: pointer;
+}
+.display-list{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

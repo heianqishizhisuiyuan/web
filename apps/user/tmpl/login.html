@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="/static/common/css/reset.css">
+    <link rel="stylesheet" href="/static/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/user/css/login.css">
+    <title>登陆-长清微学堂</title> 
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="form-wrapper">
+            <img src="/static/common/images/login-bg.png" class="blur login-bg">
+            <div class="mask"></div>
+            <form class="login-form" id="login_form"> 
+               <div class="form-group">
+                   <label class="label-control" for="">
+                        <i class="fa fa-mobile"></i>
+                   </label>
+                   <input type="mobile" name="mobile" class="form-control" placeholder="手机号码">
+               </div>
+               <div class="form-group">
+                   <label class="label-control" for="">
+                        <i class="fa fa-lock"></i>
+                   </label>
+                   <input type="password" name="password" class="form-control" placeholder="输入密码">
+               </div>
+               <div class="btn-box">
+                   <button id="user_login" class="btn btn-info btn-login" type="button">登 陆</button> 
+               </div>
+               <div class="btn-box"> 
+                   <button id="weixin_login" class="btn btn-info btn-login" type="button" style="margin-top:5px">微信登陆</button>
+               </div> 
+            </form>
+            <div class="login-tool">
+                <p class="to-regist">
+                    还没有账号？<a href="/regist.html">立即注册</a>
+                </p>
+            </div>
+        </div> 
+    </div><!-- .wrapper -->
+    <!-- jq --> 
+    <script type="text/javascript" src="/static/frozen/js/lib/zeptojs/zepto.min.js"></script>   
+    <script src="/static/common/js/jquery.plugs.js"></script> 
+    <script src="/static/common/js/base.remoter.js"></script> 
+    <script src="/static/modules/mk-rest/js/rest.js"></script>
+    <script src="/static/modules/mk-meta/index.js"></script>
+   	<script src="/static/user/js/user.js"></script>
+</body>
+</html>

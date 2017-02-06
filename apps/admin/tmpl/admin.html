@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<!-- 响应屏幕变化 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>微学堂-机构后台</title>
+	<!-- bootstrp文件 -->
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+	<!-- 皮肤 -->
+	<link rel="stylesheet" href="/static/admin/css/_all-skins.min.css">
+	<!-- font -->
+	<link rel="stylesheet" href="/static/common/css/font-awesome.min.css">
+	<!-- 主题样式表 -->
+	<link rel="stylesheet" href="/static/admin/css/AdminLTE.min.css">
+	<link rel="stylesheet" href="/static/admin/css/theme.css">
+	<link rel="stylesheet" href="/static/common/css/theme.css">
+	<link rel="stylesheet" href="/static/admin/css/dialog.css">
+	<link rel="stylesheet" href="/static/admin/css/editor.css">
+	<link rel="stylesheet" href="/static/admin/css/allmenu.css">
+	<style type="text/css">
+		.m-power{font-weight:400;margin-right:10px;line-height:33px;}
+		.m-power input {position: relative;top: 2px;}
+		.modal-body {max-height: 500px;overflow-y:auto;}
+		.article-editor .form-group {height:33px;}
+	</style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	
+	<div class="wrapper">
+		<!-- 头部状态条 -->
+		<div class="main-header">
+			<!-- logo -->
+			<a href="index2.html" class="logo">
+				<span class="logo-mini"> <b>Wdzg</b>
+				</span>
+				<span class="logo-lg"> <b>系统</b>
+					管理
+				</span>
+			</a>
+			<!-- 顶部导航条 -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- toggle button -->
+				<a class="sidebar-toggle" id="my-sidebar-toggle" data-toggle="offcanvas" role="button" href="#">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<!-- 主题导航 --> 
+				<span class="mine-title-mini" id="my-title-mini"> <i class="fa fa-home"></i>
+					<span class="xiexian">分类</span>
+				</span>
+				<!-- 工具按钮 -->
+				<div class="navbar-right" style="margin-right: 30px;height: 50px;line-height: 50px;">
+					<span class="label label-info" style="margin-right:6px"> <i class="fa fa-user"></i>
+						<span id="adminname" ><%=loginadmin.username%></span>
+					</span>
+					<span id="cancel" class="label label-default" style="cursor:pointer;">
+						<i class="fa fa-power-off"></i>
+						注销
+					</span>
+				</div>
+			</nav>
+		</div>
+		<!-- 左侧边栏 -->
+		<aside class="main-sidebar">
+			<section class="sidebar">
+				<!-- 侧边栏任务表 -->
+				<ul class="sidebar-menu">
+					<!-- 导航栏 -->
+					<h5 class="header my-color-white">导航栏</h5>
+					<li class="treeview my-treeview" id="biz_info">
+						<a href="#">
+							<i class="fa fa-user"></i>
+							<span>基本资料</span>
+						</a>
+					</li>
+					<li class="treeview my-treeview" id="biz_roll">
+						<a href="#">
+							<i class="fa fa-cog"></i>
+							<span>轮播器管理</span>
+						</a>
+					</li>	
+					<li class="treeview my-treeview" id="biz_group_purchase">
+						<a href="#">
+							<i class="fa fa-file-text-o"></i>
+							<span>留言管理</span>
+						</a>
+					</li>		
+					<li class="treeview my-treeview" id="biz_activity">
+						<a href="#">
+							<i class="fa fa-share-alt"></i>
+							<span>文章管理</span>
+						</a>
+					</li>			
+					<li class="treeview my-treeview" id="biz_enroll">
+						<a href="#">
+							<i class="fa fa-bars"></i>
+							<span>每日一言</span>
+						</a>
+					</li>	
+					<li class="treeview my-treeview" id="biz_message">
+						<a href="#">
+							<i class="fa fa-envelope"></i>
+							<span>我的消息</span>
+						</a>
+					</li>
+					<li class="treeview my-treeview" id="webInfo">
+						<a href="#">
+							<i class="fa fa-info"></i>
+							<span>网站说明</span>
+						</a>
+					</li>						
+				</ul>
+			</section>
+		</aside>
+		<!-- 网页内容 -->
+		<div class="content-wrapper" id="content-container-mine" >
+			<section class="content my-position-relative" name="class-management">
+				<div class="row ">
+					<div id="menuwrapper" class=" col-xs-3 col-sm-3 col-md-3">
+						<!-- menu -->
+						
+					</div>
+					<div class="col-xs-9 col-sm- col-md-9 " id="class-management-wrapper">
+						<!-- 内容 -->
+						
+						
+						
+					</div>
+					<!-- .col-*-* -->
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-container">
+		<div class="modal-dialog">
+			<div class="modal-content">
+		        <div class="modal-header">
+		            <button class="close exp-close" id="close" aria-label="Close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+		            <h4 class="modal-title"></h4>
+		        </div>
+		        <div class="modal-body">
+		            
+		        </div>
+		        <div class="modal-footer">
+		            <button id="button-cancel" class="btn btn-success" data-dismiss="modal" type="button">取消</button>
+		            <button  id="button-sure" class="btn btn-success" type="button"></button>
+		        </div>
+		      </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+	</div>
+	<!-- .wrapper --> 
+     
+	<!-- jq -->
+	<script src="/static/common/js/jquery-2.1.1.min.js"></script>  
+	<script src="/static/admin/ueditor/ueditor.config.js"></script>
+	<script src="/static/admin/ueditor/ueditor.all.min.js"></script>
+	<script src="/static/admin/js/effect.js"></script>
+	<script src="/static/common/js/base.remoter.js"></script>
+	<script src="/static/common/js/admin.plugs.js"></script>
+	<script src="/static/common/js/admin.image.js"></script>
+	<!-- bs -->
+	
+	<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/static/admin/js/app.min.js"></script>
+	
+	 <script src="/static/modules/mk-rest/js/rest.js"></script>
+    <script src="/static/modules/mk-meta/index.js"></script>
+	<script src="/static/admin/js/admin.js" charset="utf-8"></script>
+	
+	
+
+	
+</body>
+	<script type="text/javascript">
+
+	
+	</script>
+
+	
+</html>

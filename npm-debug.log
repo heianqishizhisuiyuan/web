@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\node\\node.exe',
+1 verbose cli   'F:\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'trim-html' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of H:\H5project\personal-web\package.json
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token 'n' at 15:6
+5 verbose stack     "nodemailer": "^2.4.1"
+5 verbose stack      ^
+5 verbose stack     at parseError (F:\node\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
+5 verbose stack     at parseJson (F:\node\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
+5 verbose stack     at F:\node\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
+5 verbose stack     at F:\node\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+6 verbose cwd H:\H5project\personal-web
+7 error Windows_NT 6.2.9200
+8 error argv "F:\\node\\node.exe" "F:\\node\\node_modules\\npm\\bin\\npm-cli.js" "install" "trim-html"
+9 error node v4.4.4
+10 error npm  v2.15.1
+11 error file H:\H5project\personal-web\package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token 'n' at 15:6
+13 error     "nodemailer": "^2.4.1"
+13 error      ^
+14 error File: H:\H5project\personal-web\package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]

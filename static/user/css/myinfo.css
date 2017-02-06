@@ -1,0 +1,218 @@
+.myinfo_bdy{
+	width: 100%;
+	position: relative;
+}
+.myinfo_bd1{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+#myinfo_user span{
+	font-size: 20px;
+	color: #00a5e0;
+	position: absolute;
+	top: 38px;
+	left: 100px;
+}
+.myinfo_bd2{
+	width: 100%;
+	height: 130px;
+	background-color: white;
+	padding: 0;
+	margin-top: 20px;
+}
+.myinfo_bd3{
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	padding: 0;
+	margin-top: 20px;
+}
+.myinfo_bd2 .hh1{
+	position: absolute;
+	left: 10px;
+	top: 140px;
+	padding: 3px;
+}
+.myinfo_bd2 .hh2{
+	position: absolute;
+	left: 10px;
+	top: 190px;
+	padding: 3px;
+}
+.myinfo_bd3 p{
+	font-size: 22px;
+	position: absolute;
+	left: 10px;
+	top: 290px;
+	padding: 3px;
+}
+.myinfo_headweimg{
+
+	background:url(../img/Alex.jpg) no-repeat;
+	background-size:100% 100% ;
+	
+}
+.myinfo_headimg{
+	width: 70px;
+	height: 70px;
+	border-radius: 50% 50%;
+	background:url(../img/Alex.jpg) no-repeat;
+	background-size:100% 100% ;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.arrowlink1{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+.arrowlink2{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 150px;
+	right: 10px;
+}
+.arrowlink3{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 200px;
+	right: 10px;
+}
+.arrowlink4{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 300px;
+	right: 10px;
+}
+.ui-btn-wrap{
+	width: 90%;
+}
+.person_head{
+	position: absolute;
+	top: 0;
+	left: 138px;
+	z-index: 9;
+}
+.person_bd2{
+	width: 100%;
+	height: 170px;
+	background-color: white;
+	padding: 0;
+	margin-top: 20px;
+}
+/*.person_n1{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 140px;
+	right:50px ;
+}*/
+.person_name{
+	color: #999;
+	position: absolute;
+	top: 140px;
+	right:50px ;
+}
+.name{
+	position: absolute;
+	top: 140px;
+	left: 10px;
+}
+.person_link2{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 142px;
+	right: 10px;
+}
+
+
+.person_link3{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 193px;
+	right: 10px;
+}
+.addr{
+	position: absolute;
+	top: 238px;
+	left: 10px;
+}
+.person_addr{
+	color: #999;
+	position: absolute;
+	top: 238px;
+	right:50px ;
+}
+.person_link4{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 243px;
+	right: 10px;
+}
+.person_bd3{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	padding: 0;
+	margin-top: 20px;
+}
+.phone{
+	position: absolute;
+	top: 322px;
+	left: 10px;
+}
+.person_phone{
+	color: #999;
+	position: absolute;
+	top: 322px;
+	right:50px ;
+}
+.person_link5{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 322px;
+	right: 10px;
+}
+.password{
+	position: absolute;
+	top: 366px;
+	left: 10px;
+}
+.person_password{
+	color: #999;
+	position: absolute;
+	top: 366px;
+	right:50px ;
+}
+.person_link6{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 366px;
+	right: 10px;
+}
+.person_close{
+	color: #0079ff;
+	line-height: 40px;
+	height: 44px;
+	background: whitesmoke;
+	margin: 5px 0 5px 0;
+}
+
+
+.upcolor{
+	color: red;
+}

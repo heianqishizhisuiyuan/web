@@ -1,0 +1,16 @@
+<div>
+	<div>
+		<div class="float-l"><span>每日列表</span></div>
+		<div class="float-r"> <input type="text" name="" id="search" class="form-control"  placeholder="搜索" /></div>
+	</div>
+	<table class="table table-bordered " >
+		
+		<theader><tr><th> 序号</th> <th> 每日一句</th><th>操作</th></tr></theader>
+		<tbody class="tbody">
+		<%list.forEach(function(item,i){%>
+			<tr><td><%=i%></td><td><%=item.content%></td><td><button class="">删除</button></td></tr>
+		<%})%>
+		</tbody>
+	</table></tr>
+	</table>
+</div>

@@ -1,0 +1,445 @@
+/*commen*/
+body{
+	background: #f0f0f0;
+}
+.wang-padding-l{
+	padding-left: 10%;
+}
+.wang-margin-tb{
+	margin: 15px 0;
+}
+.wang-hr{
+	height: 5px;
+	background: #eee;
+	border :0
+}
+.wang-inline-block{
+	display: inline-block;
+}
+.wang-color-blue{
+	color:#8dc152
+}
+.wang-pos-rel{
+	position: relative;
+}
+.wang-main{
+	margin-top: 10px;
+	width: 100%;
+	background: #fff;
+}
+/*登录*/
+/*头部*/
+#wang-header{
+	background: #ff6460;
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+#wang-header  img{
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top:25%;
+}
+#wang-header h3{
+	text-align: center;
+	line-height:50px ;
+	color: #fff;
+	font-family:arial;
+}
+
+/*main*/
+#wang-main{
+	margin-top: 10px;
+	width: 100%;
+	background: #fff;
+}
+.wang-main-center{
+	padding-top:40px ;
+	margin: 0 auto;
+	width: 80%;
+	
+}
+.wang-login-phone, .wang-login-code,.wang-login-btn,.wang-login-agrent{
+	text-align: center;
+	position: relative;
+}
+ .wang-login input[type=number]{
+	border: 1px solid #eee;
+	height: 35px;
+	border-radius:50px ;
+	text-indent: 40px;
+	width: 100%;
+}
+.wang-login .wang-login-phone input[type=number]{
+	border-right:none !important;
+}
+.wang-login i{
+	position: absolute;
+	left: 4%;
+	top: 5px;
+}
+#wang-login-phone-btn{
+	position: absolute;
+	left: 70%;
+	bottom: 0px;
+	height: 35px;
+	width: 30%;
+	background: #eee;
+	border-top-right-radius:50px ;
+	border-bottom-right-radius:50px ;
+}
+.wang-login-talk{
+	font-size: 10px;
+	color: #CCCCCC;
+	letter-spacing: 1px;
+}
+.wang-login .talk-test{
+	color:red
+}
+
+.wang-login .wang-login-btn input{
+	background: #ff6460;
+	height: 35px;
+	width: 100%;
+	border-radius: 50px;
+	text-align: center;
+}
+.wang-login-agrent p{
+	font-size: 11px;
+	color:#ccc
+}
+.wang-login-agrent a{
+	color: red;
+	text-decoration: underline;
+}
+/*快速登录*/
+.wang-fast-login{
+	padding-top:30px ;
+	text-align: center;
+}
+.wang-fast-login p{
+	color:#ccc;
+	width: 100%;
+}
+.wang-fast-login img{
+	
+	height:50px;
+	width: 50px;
+	border-radius:50% ;
+	margin-top: 25px;
+	margin-right:5% ;
+	
+}
+
+
+/* 我的*/
+.wang-headerimg img{
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+}
+.wang-name{
+	width: 20%;
+}
+.wang-name h3{
+	padding-top: 30px;
+}
+.wang-name p{
+	font-size: 10px;
+	color:#aaa
+}
+.wang-info{
+	position: absolute;
+	right: 5%;
+	top: 85px;
+}
+.wang-info .wang-changeinfo{
+	text-align: center;
+	width: 100px;
+	border-radius: 50px;
+	border:1px solid #bbb;
+	display: inline-block;
+}
+.wang-info i img{
+	position: relative;
+	top: 2px;
+	
+}
+.wang-money{
+	padding-top: 20px;
+}
+.wang-money ul li{
+	text-align: center;
+	display: inline-block;
+	width: 30%;
+	border-right:1px solid #bbb;
+}
+.wang-money ul li:last-child{
+	border-right: none;
+}
+.wang-money ul li a{
+	color:#6d6d6d;
+}
+.wang-main-center ul li{
+	display: inline-block;
+	width: 22%;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 25px;
+}
+.wang-main-center .wang-main-ul{
+	text-align: center;
+}
+.wang-main-center ul li img,.wang-myinfo-footer ul li img{
+	width: 40px;	
+}
+.wang-main-center a{
+	color:#6d6d6d;
+}
+
+
+
+/*尾部*/
+.wang-myinfo-footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	
+	
+}
+
+.wang-footer-content{
+	width: 80%;
+	margin: 0 auto;
+}
+.wang-myinfo-footer ul{
+	text-align: center;
+}
+.wang-myinfo-footer ul li{
+	width: 22%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+}
+.wang-myinfo-footer a{
+	color:#6d6d6d;
+}
+
+/*我的售出*/
+.wang-mynav{
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+.wang-nav ul {
+	text-align: center;
+}
+.wang-nav ul li{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: 15%;
+	
+}
+
+.wang-waitmenu{
+	padding-right: 10px;
+	padding-top: 30px;
+}
+
+.wang-color-red{
+	color: #fc6377;
+}
+.wang-thing-left img{
+	width: 90px
+}
+.wang-info-right{
+	padding-top:20px ;
+}
+.wang-price{
+	height: 100px;
+	padding-left: 10px;
+	position: relative;
+}
+.wang-price span{
+	line-height: 35px;
+}
+.wang-price button{
+	height: 35px;
+	width: 70px;
+	border: 1px solid #aaa;
+	background: #fff;
+}
+.wang-price-btn{
+	position: absolute;
+	right:10px;
+	top: 0;
+}
+
+
+/*我的收藏*/
+.wang-collect-nav li{
+	width: 25% !important;
+}
+.wang-seller-list{
+	width: 45%;
+}
+.wang-seller-info .wang-seller-header img{
+	height:70px;
+	width: 70px;
+}
+.wang-seller-info .wang-seller-url .wang-seller-url-name{
+	padding-top: 10px;
+}
+.wang-seller-img{
+	background: red;
+}
+.wang-seller-price{
+	padding: 5px;
+}
+.wang-seller-price button{
+	border:0 ;
+	background: #ff4f5a;
+	border-radius: 15px;
+}
+/*我发布的服务*/
+.wang-mysever-main{
+	margin-top: 0 !important;
+	color: #8b8b8b;
+}
+.wang-time-check{
+	margin-top: 10px;
+	margin-bottom: 3px;
+	position: relative;
+}
+.wang-time-check-time{
+	 color: #8b8b8b;
+}
+.wang-time-check-word{
+	position: absolute;
+	top: 0;
+	right: 2px;
+}
+
+.wang-sever-thing-img img{
+	height: 100px;
+	width: 100px;
+}
+.wang-sever-thing-info{
+	position: relative;
+	bottom: 10px;
+	max-width:60%;
+	font-size: 10px;
+}
+.wang-sever-marginl{
+	margin-left:30px;
+}
+.wang-sever-thing-info span{
+	margin-right: 10px;
+}
+.my-sever-footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.my-sever-footer button{
+	margin-top:2px ;
+	height: 30px;
+	width: 100%;
+	background: #fff;
+	color: #515151;
+	border: 0;
+	
+}
+/* 个人任务*/
+.wang-task-content{
+	padding: 0 10px;
+}
+.wang-task-edit{
+	text-align: center;
+}
+.wang-task-edit li{
+	display: inline-block;
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+}
+/*我购入的服务*/
+.wang-bsever-price{
+	padding-left:0 ;
+}
+.wang-bsever-price-span{
+	margin-left:20px ;
+}
+.wang-bsever-main{
+	margin-top: 10px;
+	width: 100%;
+	background: #fff;
+}
+.wang-bsever-type{
+	display: inline-block;
+}
+/*我接受的任务*/
+.wang-rtask-nav ul li{
+	width: 30%;
+}
+.wang-rtask-judge img{
+	height:80px;
+	width: 80px;
+}
+.wang-rtask-btn{
+	height: 50px;
+}
+.wang-rtask-color{
+	color:#8b8b8b;
+	height: 50px;
+}
+.wang-sellsever-btn{
+	position: absolute;
+	top: 50px;
+	right: 5px;
+}
+/*查看评价*/
+.wang-sellsever-discuss{
+	margin-top: 0 !important;
+}
+.wang-dicuss{
+	margin-top: 10px;
+	background: #fff;
+}
+.wang-dicuss ul li{
+	padding: 0 10px;
+}
+.wang-dicuss-header{
+	padding: 0 10px;
+	position: relative;
+}
+.wang-dicuss i{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	
+}
+
+.wang-dicuss-headerimg img{
+	height: 50px;
+	width: 50px;
+}
+.wang-dicuss i span{
+	color: #8b8b8b;
+}
+.wang-dicuss-content{
+	color: #8b8b8b;
+	display:inline-block;
+}
+.wang-dicuss-name{
+	font-size: 16px;
+	color:black;
+}
+.wang-dicuss-time{
+	color: #8b8b8b;
+}
+.wang-dicuss-reply-div{
+	 background: #f0f0f0;
+}

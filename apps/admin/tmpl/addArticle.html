@@ -1,0 +1,35 @@
+<input class="article_id" type="hidden" name="content" value="<%=article.id%>" />
+<input class="article_content" type="hidden" name="content" value="<%=article.content%>" />
+<input class="article_content" type="hidden" name="imgurl" value="" />
+<div id="article-form" >
+	<div class="form-group form-inline">
+		<label for="articletitle" >标题：</label>
+		<input class="form-control" type="text" name="" id="articletitle" style="width: 50%;" value='<%=article.title%>'/>
+		
+	</div>
+	<div class="form-group article_radio">
+		<label for="">类型：</label>
+		<label class="radio-inline">
+			<input type="radio" name="articleType" id="articleType1" value="css" />css
+		
+		<label class="radio-inline">
+			<input type="radio" name="articleType" id="articleType2" value="js" />js
+		</label>
+		<label class="radio-inline">
+			<input type="radio" name="articleType" id="articleType3" value="node" />node.js
+		</label>
+		<label class="radio-inline">
+			<input type="radio" name="articleType" id="articleType3" value="life" />life
+		</label>
+	</div>
+	<div class="form-group">
+		<button style="width:100px;height: 50px;position: relative;" id="image-upload">
+			图片上传
+		</button>
+	</div>
+	<div class="form-group">
+		 <script id="editor" type="text/plain" style="width:95%;height:400px;"></script>
+	</div>
+	<button class="btn btn-default col-md-offset-10"  id="article-btn"> 提交</button>
+</div>
+

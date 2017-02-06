@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/static/common/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/static/frozen/css/frozen.css" />
+		<link rel="stylesheet" type="text/css" href="/static/user/css/myinfo.css" />
+		<title>个人中心</title>
+	</head>
+
+	<body>
+		
+		<input type="hidden" name="userpersonid" id="userpersonid" value="<%=loginuser.id%>" />
+		<header class="ui-header ui-header-positive ui-border-b">
+			<i class="ui-icon-return" onclick="history.back()"></i>
+			<h1>个人信息</h1>
+			<button class="ui-btn"onclick="location.href='myinfo.html'">回到首页</button>
+		</header>
+		 <footer class="ui-footer ui-footer-btn">
+            <ul class="ui-tiled ui-border-t">
+                <li data-href="index.html" class="ui-border-r"><div>团购</div></li>
+                <li data-href="ui.html" class="ui-border-r"><div>机构</div></li>
+                <li data-href="js.html"><div>活动</div></li>
+                <li data-href="js.html"><div>个人中心</div></li>
+            </ul>
+        </footer>
+		 <section class="ui-container">
+        	<section id="list">
+			    <div class="demo-item">
+			        <div class="demo-block">
+			           <form action="#">
+			           	<div class="ui-list-thumb ui-avatar-s">
+						        <span class="myinfo_headweimg"></span>
+						    </div>
+					        <div class="ui-form-item ui-form-item-show ui-form-item-link">
+					            <label for="#">用户名</label>
+					            <input type="text" name="username" value="<%=loginuser.username%>" readonly placeholder="">
+					        </div>
+					        <div class="ui-form-item ui-form-item-show ui-form-item-link">
+					            <label for="#">性别</label>
+					            #if(loginuser.sex){
+					            	<input type="text" name="sex" value="<%=loginuser.sex%>" placeholder="无" readonly>
+					            #}else{
+					            	<input type="text" name="sex" value="未知" placeholder="无" readonly>
+					            #}
+					        </div>
+					        <div class="ui-form-item ui-form-item-show ui-form-item-link">
+					            <label for="#">电话</label>
+					            <input type="text" name="tel" value="<%=loginuser.mobile%>" placeholder="电话" readonly>
+					        </div>
+					        <div class="ui-form-item ui-form-item-show ui-form-item-link">
+					            <label for="#">爱好</label>
+					            <input type="text" name="like" value="" placeholder="无" readonly>
+					        </div>
+					        <div class="ui-form-item ui-form-item-show ui-form-item-link">
+					            <label for="#">家庭住址</label>
+					            <input type="text" name="address" value="<%=loginuser.address%>" placeholder="" readonly>
+					        </div>
+					        <div class="ui-form-item ui-form-item-show ui-form-item-link">
+					            <label for="#">密码修改</label>
+					            <input type="password" name="password" value="" placeholder="" readonly="">
+					        </div>
+					    </form>
+			        </div>
+			    </div>
+			</section>
+        </section><!-- /.ui-container-->
+        <div class="ui-btn-wrap">
+		    <button class="ui-btn-lg ui-btn-danger save_personal">
+		        	保存资料
+		    </button>
+		</div>
+		<div class="ui-actionsheet">  
+		  <div class="ui-actionsheet-cnt">
+		    <h4>性别选择</h4> 
+		    <button class="sex" value="1" userid="<%=loginuser.id%>">男</button>
+		    <button class="sex" value="2" userid="<%=loginuser.id%>">女</button>
+		    <button class="sex" value="null">取消</button> 
+		  </div>         
+		</div>
+		<script type="text/javascript" src="/static/frozen/js/lib/zeptojs/zepto.min.js"></script>
+		<script type="text/javascript" src="/static/frozen/js/frozen.js"></script>
+		<script src="/static/common/js/base.remoter.js"></script>
+		<script src="/static/common/js/jquery.plugs.js"></script>
+		<script src="/static/modules/mk-rest/js/rest.js"></script>
+		<script src="/static/modules/mk-meta/index.js"></script>
+		<script type="text/javascript" src="/static/user/js/user.js"></script>
+		<script>
+	    	$("input[name='sex']").click(function(){
+	    		var color=$("input[name='sex']").val();
+	    		if(color=="男"){
+	    			$(".sex[value='1']").attr("class","ui-actionsheet-del")
+	    		}else if(color=="女"){
+	    			$(".sex[value='2']").attr("class","ui-actionsheet-del")
+	    		}
+	    		$(".ui-actionsheet").addClass("show");
+		    		$(".sex").click(function(){
+						var id = $('input[name=userpersonid]').val();
+				    	var _this = $(this);
+				    	var sex = _this.text();
+			    		remoter.post('/user/updateSex',{
+			    			sex:sex,
+			    			id:id
+			    		},function(rs){
+			    			if(rs.code == 1){
+			  					
+			    				$.tip('保存成功！');
+								setTimeout(function(){
+									location.href = '/person.html';
+								},1000);
+			    			}
+			    		});
+		    		})
+	    	});
+	    	$("input[name='username']").click(function(){
+	    		window.location.href="../person_name.html";
+	    	});
+	    	$("input[name='tel']").click(function(){
+	    		window.location.href="../person_phone.html";
+	    	});
+	    	$("input[name='address']").click(function(){
+	    		window.location.href="../person_addr.html";
+	    	});
+	    	$("input[name='password']").click(function(){
+	    		window.location.href="../person_password.html";
+	    	});
+	    	$(".save_personal").click(function(){
+	    		window.location.href="../myinfo.html";
+	    	});
+	    </script>
+	</body>
+
+</html>
